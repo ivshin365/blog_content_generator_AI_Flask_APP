@@ -2,7 +2,7 @@
 
 Simple Flask application for blog content generator tool, based on GPT3 of OpenAI. 
 
-
+![AI App](https://github.com/ivshin365/blog_content_generator_AI_Flask_APP/blob/master/static/Screenshot_2.png)
 
 ![AI App](https://github.com/ivshin365/blog_content_generator_AI_Flask_APP/blob/master/static/screen1.png)
 
