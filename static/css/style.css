@@ -1,0 +1,16 @@
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #bfb3d6;
+  
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(
+      to right,
+      rgb(107, 107, 109),
+      rgb(161, 173, 196)
+    );
+}
+
+.navbar-color {
+  background-color: #301400;
+
+};

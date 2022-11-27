@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{%  block content%}
+    <div class="row container">
+      <div class="text-center">
+      <h1 class="mb-5">Blog Generator Tool</h1>
+
+      <p>The Blog Generator Tool is a free online tool that helps you to easily create your own blog posts. It provides you with a variety of prompts and topics to choose from, so you can come up with new ideas for your blog.
+
+        The Blog Generator Tool is easy to use. Just enter a few pieces of information about yourself, and the tool will generate a list of blog post ideas for you. You can then choose the topics that interest you the most, and the tool will provide you with a list of prompts to help you get started.
+      </p>
+    </div>
+
+  <div class="card">
+    <div class="card-body">
+
+    <div class="container text-center">
+      <div class="row">
+        
+
+        <div class="col">
+          <form class="" action="" method="POST">
+            <div class="mb-3">
+              <h5><label for="blogTopic" class="form-label">What topic do you want to get blog ideas on?</label></h5>
+              <input type="text" class="form-control" id="blogTopic" name="blogTopic" placeholder="Enter a blog topic">
+            </div>
+            <input type="hidden" name="form1" value="form1">
+
+            <button type="submit" id="blogTopicButton" class="btn text-white mt-3" style="background-color: #dd4b39;">Generate Blog Ideas</button>
+          </form>
+        </div>
+
+              
+          <div class="col">
+            <div class="mb-3">
+              <h5><label for="exampleFormControlTextarea1" class="form-label">Generated Blog Ideas</label></h5>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="8">
+                {{blogTopicIdeas|safe }} 
+              </textarea>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+
+  </div>
+</div>
+
+      <br>
+      <hr>
+      <br>
+<div class="card">
+   <div class="card-body">
+
+    <div class="container text-center">
+      <div class="row text-center">
+        
+        <div class="col">
+          <form class="" action="" method="post">
+            <div class="mb-3">
+              <h5><label for="blogSection" class="form-label">Enter the Blog Topic Below that you have selected to write about</label></h5>
+              <input type="text" class="form-control" id="blogSection" name="blogSection" placeholder="Enter the blog title to generate blog sections on">
+            </div>
+            <input type="hidden" name="form2" value="form2">
+
+            <button type="submit" class="btn text-white mt-3" style="background-color: #dd4b39;">Generate Blog Sections</button>
+          </form>
+        </div>
+      
+
+        <div class="col">
+          <div class="mb-3">
+            <h5><label for="exampleFormControlTextarea1" class="form-label">Generated Section Ideas</label></h5>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="8">
+                 {{blogSectionIdeas|safe}}
+            </textarea>
+         </div>
+        </div>
+      
+      </div>
+    </div>
+
+  </div>
+</div>
+      <br>
+      <hr>
+      <br>
+
+<div class="card">
+  <div class="card-body">
+
+    <div class="container text-center">
+      <div class="row">
+        
+          <form class="mb-5" action="" method="post">
+            <div class="mb-3">
+              <h5><label for="blogExpander" class="form-label">Enter the Blog section title you want to expand</label></h5>
+              <input type="text" class="form-control" id="blogExpander" name="blogExpander" placeholder="Enter the blog section title">
+            </div>
+            <input type="hidden" name="form3" value="form3">
+
+            <button type="submit" class="btn text-white" style="background-color: #dd4b39;">Expand on the title</button>
+          </form>
+        
+
+        
+          <div class="mb-3">
+            <h5><label for="exampleFormControlTextarea1" class="form-label">Generated Expanded Blog</label></h5>
+            <textarea class="form-control" id="exampleFormControlTextarea1" rows="10">
+              {{blogExpanded|safe}}
+            </textarea>
+          </div>
+        
+
+      </div>
+    </div>
+ 
+  </div>
+</div>
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+{% endblock %}
