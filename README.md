@@ -4,7 +4,7 @@ Simple Flask application for blog content generator tool, based on GPT3 of OpenA
 
 
 
-![AI App](github.com/ivshin365/blog_content_generator_AI_Flask_APP/blob/main/static/screen1.png)
+![AI App](https://github.com/ivshin365/blog_content_generator_AI_Flask_APP/blob/master/static/screen1.png)
 
 
 ## Python virtual environment
